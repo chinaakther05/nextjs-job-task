@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "iPhone 17",
+    "price": 145000,
+    "rating": 4.8,
+    "reviews": 125,
+    "description": "Apple iPhone 17 with A18 chip, advanced camera system, ultra-smooth display and premium build quality.",
+    "image": "https://i.ibb.co.com/GBDYhy2/apple-iphone-17-pro-max-cosmic-orange-official-image.webp"
+  },
+  {
+    "id": 2,
+    "title": "Gaming Laptop",
+    "price": 75000,
+    "rating": 4.5,
+    "reviews": 78,
+    "description": "High-performance gaming laptop with powerful processor, 16GB RAM and fast SSD storage.",
+    "image": "https://i.ibb.co.com/gM1ZgF0t/best-gaming-laptops-20242028-medium.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Android Smartphone",
+    "price": 28000,
+    "rating": 4.3,
+    "reviews": 210,
+    "description": "Latest Android smartphone with long-lasting battery and high-resolution camera.",
+    "image": "https://i.ibb.co.com/N2VwQNG3/images-1.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Wireless Headphones",
+    "price": 4500,
+    "rating": 4.6,
+    "reviews": 95,
+    "description": "Noise-cancelling wireless headphones with rich sound and comfortable fit.",
+    "image": "https://i.ibb.co.com/4wBsVBtd/download-1.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Smart Watch",
+    "price": 6500,
+    "rating": 4.4,
+    "reviews": 120,
+    "description": "Smart watch with fitness tracking, heart-rate monitoring and notification support.",
+    "image": "https://i.ibb.co.com/ccJKSjf2/images-1.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Bluetooth Speaker",
+    "price": 3200,
+    "rating": 4.2,
+    "reviews": 65,
+    "description": "Portable Bluetooth speaker with deep bass and clear sound quality.",
+    "image": "https://i.ibb.co.com/8Db9G2mL/images-1.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Wireless Mouse",
+    "price": 1200,
+    "rating": 4.1,
+    "reviews": 140,
+    "description": "Ergonomic wireless mouse with smooth scrolling and fast response.",
+    "image": "https://i.ibb.co.com/pBS9mVjh/61nde-u-Gu1-L-AC-SL1200.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Mechanical Keyboard",
+    "price": 4500,
+    "rating": 4.7,
+    "reviews": 88,
+    "description": "Mechanical keyboard with RGB lighting and durable key switches.",
+    "image": "https://i.ibb.co.com/XZHzTC8Y/71wdt9uqbxl-ac-sl1500-1728983121696.webp"
+  }
+]
