@@ -2,7 +2,8 @@ import React from 'react';
 import products from "@/data/items.json";
 import ProductCard from '../cards/ProductCard';
 
-const Products = () => {
+const Products = async() => {
+ 
   if (!products || products.length === 0) return <p>No products found</p>;
 
   return (
