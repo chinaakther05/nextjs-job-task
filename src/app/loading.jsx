@@ -1,3 +1,4 @@
+'use client';
 import Logo from '@/components/layouts/Logo';
 import React from 'react';
 

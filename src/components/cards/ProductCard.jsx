@@ -24,21 +24,19 @@ const ProductCard = ({ product, onViewDetails }) => {
           <span className="text-gray-500">({reviews} reviews)</span>
         </div>
         <p className="text-lg font-bold">৳ {price}</p>
-        <div className="card-actions justify-between">
-          <button className="btn btn-primary btn-sm flex items-center gap-2">
-            <BsCartPlus /> Add to Cart
-          </button>
+       <div className="card-actions flex justify-between gap-3">
+  <button className="btn btn-primary btn-sm flex items-center gap-2">
+    <BsCartPlus /> Add to Cart
+  </button>
 
-          {/* ✅ View Details without navigation */}
-         
-         <Link
-  href={`/products/${product.id}`}
-  className="btn btn-primary btn-outline mt-4 w-full"
->
-  View Details
-</Link>
+  <Link
+    href={`/products/${product.id}`}
+    className="btn btn-primary btn-outline btn-sm"
+  >
+    View Details
+  </Link>
+</div>
 
-        </div>
       </div>
     </div>
   );

@@ -1,5 +1,8 @@
 import Image from "next/image";
 import items from "@/data/items.json"
+import { FaCartPlus } from "react-icons/fa";
+import CartButton from "@/components/Buttons/Cartbutton";
+
 
 
 // ✅ Page must be async
@@ -38,10 +41,10 @@ console.log(productsData)
         <p className="text-lg font-bold">Price: ৳ {product.price}</p>
         <p>Rating: {product.rating} ({product.reviews} reviews)</p>
         <p>{product.description}</p>
-        <button className="px-5 py-2 bg-blue-600 text-white rounded">
-          Add to Cart
-        </button>
-        <button>jghg</button>
+
+       {/* Action */}
+       <CartButton product={product}></CartButton>
+       
       </div>
     </div>
   );

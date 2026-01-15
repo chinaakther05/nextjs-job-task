@@ -16,7 +16,7 @@ const Navbar = () => {
         <NavLink href={"/add item"}>Add Item</NavLink>
     </li>
     <li>
-        <NavLink href={"/contact"}>Contact</NavLink>
+        <NavLink className="bg-red-600" href={"/contact "}>Contact</NavLink>
     </li>
     
     
