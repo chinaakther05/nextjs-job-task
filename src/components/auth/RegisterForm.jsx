@@ -25,6 +25,7 @@ const RegisterForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
   const result = await postUser(form);
+  
   if(result.acknowledged){
     alert('successfull. please login');
     router.push("/login");

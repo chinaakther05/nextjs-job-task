@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from './Logo';
 import Link from 'next/link';
 import NavLink from '../Buttons/NavLink';
+import AuthButtons from '../Buttons/AuthButtons';
 
 const Navbar = () => {
 
@@ -45,9 +46,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <Link href={"/login"}>
-    <button className='btn btn-primary btn-outline '>Login</button>
-    </Link>
+    <AuthButtons></AuthButtons>
   </div>
 </div>
     );
