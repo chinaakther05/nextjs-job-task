@@ -1,13 +1,14 @@
 "use client";
 import { signIn } from "next-auth/react";
-import { useSearchParams } from "next/navigation";
+import { useParams, useSearchParams } from "next/navigation";
 import { FaGoogle } from "react-icons/fa";
 
-const SocialButtons = () => {
+export const SocialButtons = () => {
   const params = useSearchParams();
 
   const handleSignIn = async () => {
-    await signIn("google", {
+    const result = await signIn("google", {
+      // redirect: "false",
       callbackUrl: params.get("callbackUrl") || "/",
     });
   };
@@ -24,5 +25,3 @@ const SocialButtons = () => {
     </div>
   );
 };
-
-export default SocialButtons;

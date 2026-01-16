@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import { BsCartPlus } from "react-icons/bs";
 import Link from "next/link";
+import CartButton from "../Buttons/Cartbutton";
 
 
 
@@ -25,9 +26,7 @@ const ProductCard = ({ product, onViewDetails }) => {
         </div>
         <p className="text-lg font-bold">৳ {price}</p>
        <div className="card-actions flex justify-between gap-3">
-  <button className="btn btn-primary btn-sm flex items-center gap-2">
-    <BsCartPlus /> Add to Cart
-  </button>
+ <CartButton product={{...product}}></CartButton>
 
   <Link
     href={`/products/${product.id}`}

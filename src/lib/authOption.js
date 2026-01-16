@@ -1,11 +1,14 @@
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
+import GoogleProvider from "next-auth/providers/google";
 
 
 const demoUser = {
   email: "admin@gmail.com",
   password: "123456"
 }
+
+
 
 export const authOptions = {
   session: {
@@ -34,13 +37,22 @@ export const authOptions = {
         return demoUser;
       },
     }),
+
+    GoogleProvider({
+      clientId:process.env.GOOGLE_CLIENT_ID,
+      clientSecret:process.env.GOOGLE_CLIENT_SECRET
+    })
+
+
   ],
 
   callbacks: {
     async jwt({ token, user }) {
       if (user) token.user = user;
-      return token;
+     return token;
     },
+
+   
 
     async session({ session, token }) {
       session.user = token.user;

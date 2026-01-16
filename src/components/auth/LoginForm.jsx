@@ -5,7 +5,10 @@ import { signIn } from "next-auth/react";
 import Swal from "sweetalert2";
 import { useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
-import SocialButtons from "./SocialButtons";
+import { SocialButtons } from "./SocialButtons";
+
+
+
 
 
 
@@ -68,7 +71,8 @@ const LoginForm = () => {
             </button>
           </form>
 
-          <SocialButtons />
+        <SocialButtons />
+
 
           <p className="text-center text-sm mt-4">
             Don’t have an account?{" "}

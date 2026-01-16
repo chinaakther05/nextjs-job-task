@@ -18,7 +18,7 @@ const CartButton = ({product}) => {
     };
     return (
         <div>
-       <button onClick={add2Card} className="px-5 py-2 btn btn-primary bg-blue-600 text-white rounded">
+       <button onClick={add2Card} className="px-5 py-2 w-full  btn btn-primary bg-blue-600 text-white rounded">
                 <FaCartPlus></FaCartPlus>
                 Add to Cart
               </button>
