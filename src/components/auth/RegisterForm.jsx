@@ -6,6 +6,7 @@ import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { signIn } from "next-auth/react";
 import Swal from "sweetalert2";
+import { postUser } from "@/actions/server/auth";
 
 const RegisterForm = () => {
   const params = useSearchParams();
@@ -23,23 +24,12 @@ const RegisterForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const result = await postUser(form);
+  const result = await postUser(form);
+  if(result.acknowledged){
+    alert('successfull. please login');
+    router.push("/login");
+  }
 
-    if (result.acknowledged) {
-      const loginResult = await signIn("credentials", {
-        email: form.email,
-        password: form.password,
-        redirect: false,
-        callbackUrl,
-      });
-
-      if (loginResult.ok) {
-        Swal.fire("success", "Registered successfully", "success");
-        router.push(callbackUrl);
-      }
-    } else {
-      Swal.fire("error", "Sorry", "error");
-    }
   };
 
   return (
