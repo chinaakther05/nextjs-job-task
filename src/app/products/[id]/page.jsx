@@ -12,6 +12,7 @@ const ProductDetailPage = async ({ params }) => {
 const productsData = await items
 console.log(productsData)
 
+
   const product = productsData.find((p) => String(p.id) === String(id));
 
   if (!product) {
