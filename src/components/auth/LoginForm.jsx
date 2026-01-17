@@ -47,7 +47,8 @@ const LoginForm = () => {
     <div className="min-h-screen flex items-center justify-center bg-base-200">
       <div className="card w-full max-w-sm shadow-xl bg-base-100">
         <div className="card-body">
-          <h2 className="text-2xl font-bold text-center">Login</h2>
+          <h2 className="text-2xl font-bold text-center">Welcome Back</h2>
+          <p className="  text-center">Please enter your details to login</p>
 
           <form onSubmit={handleSubmit} className="space-y-3">
             <input
@@ -74,15 +75,7 @@ const LoginForm = () => {
         <SocialButtons />
 
 
-          <p className="text-center text-sm mt-4">
-            Don’t have an account?{" "}
-            <Link
-              href={`/register?callbackUrl=${callback}`}
-              className="link link-primary"
-            >
-              Register
-            </Link>
-          </p>
+         
         </div>
       </div>
     </div>

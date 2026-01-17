@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "./Logo";
 import NavLink from "../Buttons/NavLink";
 import AuthButtons from "../Buttons/AuthButtons";
-import ThemeToggle from "../ThemeToggle";
+
 
 const Navbar = () => {
   const nav = (
@@ -13,9 +13,7 @@ const Navbar = () => {
       <li>
         <NavLink href="/products">Products</NavLink>
       </li>
-      <li>
-        <NavLink href="/add-item">Add Item</NavLink>
-      </li>
+      
       <li>
         <NavLink href="/contact">Contact</NavLink>
       </li>
@@ -24,7 +22,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar bg-base-100">
-      {/* LEFT */}
+     
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -52,14 +50,14 @@ const Navbar = () => {
         <Logo />
       </div>
 
-      {/* CENTER */}
+      
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{nav}</ul>
+        <ul className="menu menu-horizontal px-1 gap-6">{nav}</ul>
       </div>
 
-      {/* RIGHT */}
+      
       <div className="navbar-end gap-2">
-        <ThemeToggle />
+        
         <AuthButtons />
       </div>
     </div>

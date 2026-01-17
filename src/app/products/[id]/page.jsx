@@ -46,6 +46,7 @@ console.log(productsData)
        {/* Action */}
        <CartButton product={product}></CartButton>
        
+       
       </div>
     </div>
   );
