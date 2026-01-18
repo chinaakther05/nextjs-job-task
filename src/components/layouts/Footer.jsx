@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "./Logo";
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -14,27 +15,7 @@ const Footer = () => {
             Building your brand with excellence.
           </p>
 
-          {/* Social Links */}
-          <div className="flex gap-4 mt-4">
-            <a
-              href="https://www.facebook.com/sohag.gaji.14473"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-600 transition-colors"
-            >
-              <FaFacebookF size={20} />
-            </a>
-           
-            
-            <a
-              href="https://www.linkedin.com/in/china-akther-a384b23a2/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-500 transition-colors"
-            >
-              <FaLinkedinIn size={20} />
-            </a>
-          </div>
+         
         </div>
 
         
@@ -61,7 +42,38 @@ const Footer = () => {
           <a className="link link-hover">Terms of use</a>
           <a className="link link-hover">Privacy policy</a>
           <a className="link link-hover">Cookie policy</a>
+           {/* Social Links */}
+          <div className="flex gap-4 mt-4">
+            <a
+              href="https://www.facebook.com/sohag.gaji.14473"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-600 transition-colors"
+            >
+              <FaFacebookF size={20} />
+            </a>
+           
+            
+            <a
+              href="https://www.linkedin.com/in/china-akther-a384b23a2/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500 transition-colors"
+            >
+              <FaLinkedinIn size={20} />
+            </a>
+            <a
+  href="https://github.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:text-gray-800 transition-colors"
+>
+  <FaGithub size={20} />
+</a>
+
+          </div>
         </nav>
+        
       </div>
     </div>
   );
