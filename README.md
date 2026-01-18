@@ -55,3 +55,4 @@ This project is a **Next.js 15/16 application** that supports both public and pr
 ```bash
 git clone https://github.com/chinaakther05/nextjs-job-task
 
+Demo LINK:https://smart-shop-seven-indol.vercel.app/
